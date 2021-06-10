@@ -16,6 +16,9 @@ namespace RecuRUN
     /// </summary>
     public partial class MainForm : Form
     {
+        // Target directory path
+        string directoryPath = string.Empty;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="T:RecuRUN.MainForm"/> class.
         /// </summary>
@@ -32,7 +35,20 @@ namespace RecuRUN
         /// <param name="e">Event arguments.</param>
         private void OnBrowseForFolderButtonClick(object sender, EventArgs e)
         {
-            // TODO Add code
+            // Show folder browser dialog
+            if (this.folderBrowserDialog.ShowDialog() == DialogResult.OK && this.folderBrowserDialog.SelectedPath.Length > 0)
+            {
+                // Set target directory path
+                this.directoryPath = this.folderBrowserDialog.SelectedPath;
+
+                // Enable form controls
+                this.executeRecursivelyButton.Enabled = true;
+                this.create0ByteFilesButton.Enabled = true;
+                this.commandLabel.Enabled = true;
+                this.commandTextBox.Enabled = true;
+                this.fileNameLabel.Enabled = true;
+                this.fileNameTextBox.Enabled = true;
+            }
         }
 
         /// <summary>
