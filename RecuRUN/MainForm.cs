@@ -48,6 +48,9 @@ namespace RecuRUN
                 this.commandTextBox.Enabled = true;
                 this.fileNameLabel.Enabled = true;
                 this.fileNameTextBox.Enabled = true;
+
+                // Focus command text box
+                this.commandTextBox.Focus();
             }
         }
 
