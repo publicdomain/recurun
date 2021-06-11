@@ -8,6 +8,7 @@ namespace RecuRUN
     // Directives
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics;
     using System.Drawing;
     using System.IO;
     using System.Windows.Forms;
@@ -62,7 +63,64 @@ namespace RecuRUN
         /// <param name="e">Event arguments.</param>
         private void OnExecuteRecursivelyButtonClick(object sender, EventArgs e)
         {
-            // TODO Add code
+            // Declare processed count 
+            int processedCount = 0;
+
+            // Iterate subdirectories
+            foreach (string currentDirectoryPath in Directory.EnumerateDirectories(this.folderBrowserDialog.SelectedPath, "*", SearchOption.AllDirectories))
+            {
+                // Set batch file path
+                string batchFilePath = Path.Combine(currentDirectoryPath, $"RecuRUN-{DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss")}.bat");
+
+                // Error handling & logging
+                try
+                {
+                    // Write file
+                    File.WriteAllText(batchFilePath, this.commandTextBox.Text);
+
+                    // Set batch process
+                    Process batchProcess = new Process();
+
+                    // Set batch start info
+                    ProcessStartInfo batchProcessStartInfo = new ProcessStartInfo(batchFilePath)
+                    {
+                        // Set start info values
+                        WorkingDirectory = currentDirectoryPath,
+                        WindowStyle = this.showConsoleToolStripMenuItem.Checked ? ProcessWindowStyle.Normal : ProcessWindowStyle.Hidden,
+                        CreateNoWindow = true,
+                        UseShellExecute = true
+                    };
+
+                    // Assign process start info
+                    batchProcess.StartInfo = batchProcessStartInfo;
+
+                    // Start the process
+                    batchProcess.Start();
+
+                    // Let it run
+                    batchProcess.WaitForExit();
+
+                    // Remove batch file from disk
+                    File.Delete(batchFilePath);
+
+                    // Raise count
+                    processedCount++;
+                }
+                catch (Exception ex)
+                {
+                    // Log error event
+                    MessageBox.Show($"Error processing file:{Environment.NewLine}{batchFilePath}{Environment.NewLine}Message: {ex.Message}", "Aborting on error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    // Abort operation by exit
+                    return;
+                }
+            }
+
+            // Set processed count
+            this.countToolStripStatusLabel.Text = (this.resetCountToolStripMenuItem.Checked ? processedCount : int.Parse(this.countToolStripStatusLabel.Text) + processedCount).ToString();
+
+            // Advise user
+            MessageBox.Show($"Successfully processed {processedCount} batch files.", $"Recursive batch", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         /// <summary>
