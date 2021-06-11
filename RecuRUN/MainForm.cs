@@ -213,7 +213,8 @@ namespace RecuRUN
         /// <param name="e">Event arguments.</param>
         private void OnDailyReleasesPublicDomainDailycomToolStripMenuItemClick(object sender, EventArgs e)
         {
-            // TODO Add code
+            // Open daily releases website
+            Process.Start("https://publicdomaindaily.com");
         }
 
         /// <summary>
