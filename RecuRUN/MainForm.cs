@@ -9,6 +9,7 @@ namespace RecuRUN
     using System;
     using System.Collections.Generic;
     using System.Drawing;
+    using System.IO;
     using System.Windows.Forms;
 
     /// <summary>
@@ -71,7 +72,52 @@ namespace RecuRUN
         /// <param name="e">Event arguments.</param>
         private void OnCreate0ByteFilesButtonClick(object sender, EventArgs e)
         {
-            // TODO Add code
+            // Check for a file name
+            if (this.fileNameTextBox.TextLength == 0)
+            {
+                // Advise user
+                MessageBox.Show("Please enter file name.", "File name missing", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                // Focus file name text box
+                this.fileNameTextBox.Focus();
+
+                // Halt flow
+                return;
+            }
+
+            // Declare processed count 
+            int processedCount = 0;
+
+            // Iterate subdirectories
+            foreach (string currentDirectoryPath in Directory.EnumerateDirectories(this.folderBrowserDialog.SelectedPath, "*", SearchOption.AllDirectories))
+            {
+                // Set zero byte file path
+                string zeroByteFilePath = Path.Combine(currentDirectoryPath, this.fileNameTextBox.Text);
+
+                // Error handling & logging
+                try
+                {
+                    // Write file
+                    File.Create(zeroByteFilePath);
+
+                    // Raise count
+                    processedCount++;
+                }
+                catch (Exception ex)
+                {
+                    // Log error event
+                    MessageBox.Show($"Error creating file:{Environment.NewLine}{zeroByteFilePath}{Environment.NewLine}Message: {ex.Message}", "Aborting on error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    // Abort operation by exit
+                    return;
+                }
+            }
+
+            // Set processed count
+            this.countToolStripStatusLabel.Text = (this.resetCountToolStripMenuItem.Checked ? processedCount : int.Parse(this.countToolStripStatusLabel.Text) + processedCount).ToString();
+
+            // Advise user
+            MessageBox.Show($"Successfully created {processedCount} zero-byte files.", $"Files created", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         /// <summary>
