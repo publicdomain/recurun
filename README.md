@@ -21,7 +21,7 @@ v0.1.0:
 - Always on top.
 - Reset count option.
 
-Day #163, Week #23 @ June 12, 2021
+Day #164, Week #23 @ June 13, 2021
 
 ==========
 
