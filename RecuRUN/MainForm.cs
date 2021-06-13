@@ -295,7 +295,7 @@ namespace RecuRUN
             var aboutForm = new AboutForm(
                 $"About {programTitle}",
                 $"{programTitle} {version.Major}.{version.Minor}.{version.Build}",
-                $"Made for: fdwojo{Environment.NewLine}DonationCoder.com{Environment.NewLine}Day #162, Week #23 @ June 11, 2021",
+                $"Made for: fdwojo{Environment.NewLine}DonationCoder.com{Environment.NewLine}Day #163, Week #23 @ June 12, 2021",
                 licenseText,
                 this.Icon.ToBitmap())
             {

@@ -36,306 +36,307 @@ namespace RecuRUN
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
-            this.countToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.mainToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.mainStatusStrip = new System.Windows.Forms.StatusStrip();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.sourceCodeGithubcomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.originalThreadDonationCodercomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dailyReleasesPublicDomainDailycomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alwaysOnTopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.showConsoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resetCountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.minimizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mainMenuStrip = new System.Windows.Forms.MenuStrip();
-            this.mainTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.create0ByteFilesButton = new System.Windows.Forms.Button();
-            this.commandLabel = new System.Windows.Forms.Label();
-            this.fileNameLabel = new System.Windows.Forms.Label();
-            this.fileNameTextBox = new System.Windows.Forms.TextBox();
-            this.executeRecursivelyButton = new System.Windows.Forms.Button();
-            this.commandTextBox = new System.Windows.Forms.TextBox();
-            this.browseForFolderButton = new System.Windows.Forms.Button();
-            this.mainStatusStrip.SuspendLayout();
-            this.mainMenuStrip.SuspendLayout();
-            this.mainTableLayoutPanel.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // countToolStripStatusLabel
-            // 
-            this.countToolStripStatusLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.countToolStripStatusLabel.Name = "countToolStripStatusLabel";
-            this.countToolStripStatusLabel.Size = new System.Drawing.Size(14, 17);
-            this.countToolStripStatusLabel.Text = "0";
-            // 
-            // mainToolStripStatusLabel
-            // 
-            this.mainToolStripStatusLabel.Name = "mainToolStripStatusLabel";
-            this.mainToolStripStatusLabel.Size = new System.Drawing.Size(97, 17);
-            this.mainToolStripStatusLabel.Text = "Processed count:";
-            // 
-            // mainStatusStrip
-            // 
-            this.mainStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-                                    this.mainToolStripStatusLabel,
-                                    this.countToolStripStatusLabel});
-            this.mainStatusStrip.Location = new System.Drawing.Point(0, 245);
-            this.mainStatusStrip.Name = "mainStatusStrip";
-            this.mainStatusStrip.Size = new System.Drawing.Size(301, 22);
-            this.mainStatusStrip.SizingGrip = false;
-            this.mainStatusStrip.TabIndex = 29;
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
-            this.aboutToolStripMenuItem.Text = "&About...";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.OnAboutToolStripMenuItemClick);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(286, 6);
-            // 
-            // sourceCodeGithubcomToolStripMenuItem
-            // 
-            this.sourceCodeGithubcomToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sourceCodeGithubcomToolStripMenuItem.Image")));
-            this.sourceCodeGithubcomToolStripMenuItem.Name = "sourceCodeGithubcomToolStripMenuItem";
-            this.sourceCodeGithubcomToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
-            this.sourceCodeGithubcomToolStripMenuItem.Text = "Source code @ Github.com";
-            this.sourceCodeGithubcomToolStripMenuItem.Click += new System.EventHandler(this.OnSourceCodeGithubcomToolStripMenuItemClick);
-            // 
-            // originalThreadDonationCodercomToolStripMenuItem
-            // 
-            this.originalThreadDonationCodercomToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("originalThreadDonationCodercomToolStripMenuItem.Image")));
-            this.originalThreadDonationCodercomToolStripMenuItem.Name = "originalThreadDonationCodercomToolStripMenuItem";
-            this.originalThreadDonationCodercomToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
-            this.originalThreadDonationCodercomToolStripMenuItem.Text = "&Original thread @ DonationCoder.com";
-            this.originalThreadDonationCodercomToolStripMenuItem.Click += new System.EventHandler(this.OnOriginalThreadDonationCodercomToolStripMenuItemClick);
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-                                    this.dailyReleasesPublicDomainDailycomToolStripMenuItem,
-                                    this.originalThreadDonationCodercomToolStripMenuItem,
-                                    this.sourceCodeGithubcomToolStripMenuItem,
-                                    this.toolStripSeparator2,
-                                    this.aboutToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "&Help";
-            // 
-            // dailyReleasesPublicDomainDailycomToolStripMenuItem
-            // 
-            this.dailyReleasesPublicDomainDailycomToolStripMenuItem.Name = "dailyReleasesPublicDomainDailycomToolStripMenuItem";
-            this.dailyReleasesPublicDomainDailycomToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
-            this.dailyReleasesPublicDomainDailycomToolStripMenuItem.Text = "&Daily releases @ PublicDomainDaily.com";
-            this.dailyReleasesPublicDomainDailycomToolStripMenuItem.Click += new System.EventHandler(this.OnDailyReleasesPublicDomainDailycomToolStripMenuItemClick);
-            // 
-            // alwaysOnTopToolStripMenuItem
-            // 
-            this.alwaysOnTopToolStripMenuItem.Name = "alwaysOnTopToolStripMenuItem";
-            this.alwaysOnTopToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.alwaysOnTopToolStripMenuItem.Text = "&Always on top";
-            // 
-            // optionsToolStripMenuItem
-            // 
-            this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-                                    this.alwaysOnTopToolStripMenuItem,
-                                    this.showConsoleToolStripMenuItem,
-                                    this.resetCountToolStripMenuItem});
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.optionsToolStripMenuItem.Text = "&Options";
-            this.optionsToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.OnOptionsToolStripMenuItemDropDownItemClicked);
-            // 
-            // showConsoleToolStripMenuItem
-            // 
-            this.showConsoleToolStripMenuItem.Checked = true;
-            this.showConsoleToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.showConsoleToolStripMenuItem.Name = "showConsoleToolStripMenuItem";
-            this.showConsoleToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.showConsoleToolStripMenuItem.Text = "&Show console";
-            // 
-            // resetCountToolStripMenuItem
-            // 
-            this.resetCountToolStripMenuItem.Checked = true;
-            this.resetCountToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.resetCountToolStripMenuItem.Name = "resetCountToolStripMenuItem";
-            this.resetCountToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.resetCountToolStripMenuItem.Text = "&Reset count";
-            // 
-            // exitToolStripMenuItem1
-            // 
-            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(92, 22);
-            this.exitToolStripMenuItem1.Text = "E&xit";
-            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.OnExitToolStripMenuItem1Click);
-            // 
-            // fileToolStripMenuItem1
-            // 
-            this.fileToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-                                    this.exitToolStripMenuItem1});
-            this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
-            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem1.Text = "&File";
-            // 
-            // minimizeToolStripMenuItem
-            // 
-            this.minimizeToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.minimizeToolStripMenuItem.Name = "minimizeToolStripMenuItem";
-            this.minimizeToolStripMenuItem.Size = new System.Drawing.Size(12, 20);
-            this.minimizeToolStripMenuItem.Visible = false;
-            // 
-            // mainMenuStrip
-            // 
-            this.mainMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-                                    this.minimizeToolStripMenuItem,
-                                    this.fileToolStripMenuItem1,
-                                    this.optionsToolStripMenuItem,
-                                    this.helpToolStripMenuItem});
-            this.mainMenuStrip.Location = new System.Drawing.Point(0, 0);
-            this.mainMenuStrip.Name = "mainMenuStrip";
-            this.mainMenuStrip.Size = new System.Drawing.Size(301, 24);
-            this.mainMenuStrip.TabIndex = 30;
-            // 
-            // mainTableLayoutPanel
-            // 
-            this.mainTableLayoutPanel.ColumnCount = 2;
-            this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 85F));
-            this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.mainTableLayoutPanel.Controls.Add(this.create0ByteFilesButton, 0, 4);
-            this.mainTableLayoutPanel.Controls.Add(this.commandLabel, 0, 1);
-            this.mainTableLayoutPanel.Controls.Add(this.fileNameLabel, 0, 3);
-            this.mainTableLayoutPanel.Controls.Add(this.fileNameTextBox, 1, 3);
-            this.mainTableLayoutPanel.Controls.Add(this.executeRecursivelyButton, 0, 2);
-            this.mainTableLayoutPanel.Controls.Add(this.commandTextBox, 1, 1);
-            this.mainTableLayoutPanel.Controls.Add(this.browseForFolderButton, 0, 0);
-            this.mainTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainTableLayoutPanel.Location = new System.Drawing.Point(0, 24);
-            this.mainTableLayoutPanel.Name = "mainTableLayoutPanel";
-            this.mainTableLayoutPanel.RowCount = 5;
-            this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.mainTableLayoutPanel.Size = new System.Drawing.Size(301, 221);
-            this.mainTableLayoutPanel.TabIndex = 5;
-            // 
-            // create0ByteFilesButton
-            // 
-            this.mainTableLayoutPanel.SetColumnSpan(this.create0ByteFilesButton, 2);
-            this.create0ByteFilesButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.create0ByteFilesButton.Enabled = false;
-            this.create0ByteFilesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.create0ByteFilesButton.Location = new System.Drawing.Point(4, 185);
-            this.create0ByteFilesButton.Margin = new System.Windows.Forms.Padding(4);
-            this.create0ByteFilesButton.Name = "create0ByteFilesButton";
-            this.create0ByteFilesButton.Size = new System.Drawing.Size(293, 32);
-            this.create0ByteFilesButton.TabIndex = 6;
-            this.create0ByteFilesButton.Text = "Create 0-byte files";
-            this.create0ByteFilesButton.UseVisualStyleBackColor = true;
-            this.create0ByteFilesButton.Click += new System.EventHandler(this.OnCreate0ByteFilesButtonClick);
-            // 
-            // commandLabel
-            // 
-            this.commandLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.commandLabel.Enabled = false;
-            this.commandLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.commandLabel.Location = new System.Drawing.Point(3, 40);
-            this.commandLabel.Name = "commandLabel";
-            this.commandLabel.Size = new System.Drawing.Size(79, 71);
-            this.commandLabel.TabIndex = 1;
-            this.commandLabel.Text = "&Command(s):";
-            this.commandLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // fileNameLabel
-            // 
-            this.fileNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fileNameLabel.Enabled = false;
-            this.fileNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fileNameLabel.Location = new System.Drawing.Point(3, 151);
-            this.fileNameLabel.Name = "fileNameLabel";
-            this.fileNameLabel.Size = new System.Drawing.Size(79, 30);
-            this.fileNameLabel.TabIndex = 4;
-            this.fileNameLabel.Text = "&File name:";
-            this.fileNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // fileNameTextBox
-            // 
-            this.fileNameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fileNameTextBox.Enabled = false;
-            this.fileNameTextBox.Location = new System.Drawing.Point(88, 154);
-            this.fileNameTextBox.Name = "fileNameTextBox";
-            this.fileNameTextBox.Size = new System.Drawing.Size(210, 20);
-            this.fileNameTextBox.TabIndex = 33;
-            // 
-            // executeRecursivelyButton
-            // 
-            this.mainTableLayoutPanel.SetColumnSpan(this.executeRecursivelyButton, 2);
-            this.executeRecursivelyButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.executeRecursivelyButton.Enabled = false;
-            this.executeRecursivelyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.executeRecursivelyButton.Location = new System.Drawing.Point(3, 114);
-            this.executeRecursivelyButton.Name = "executeRecursivelyButton";
-            this.executeRecursivelyButton.Size = new System.Drawing.Size(295, 34);
-            this.executeRecursivelyButton.TabIndex = 3;
-            this.executeRecursivelyButton.Text = "&Execute recursively";
-            this.executeRecursivelyButton.UseVisualStyleBackColor = true;
-            this.executeRecursivelyButton.Click += new System.EventHandler(this.OnExecuteRecursivelyButtonClick);
-            // 
-            // commandTextBox
-            // 
-            this.commandTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.commandTextBox.Enabled = false;
-            this.commandTextBox.Location = new System.Drawing.Point(88, 43);
-            this.commandTextBox.Multiline = true;
-            this.commandTextBox.Name = "commandTextBox";
-            this.commandTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.commandTextBox.Size = new System.Drawing.Size(210, 65);
-            this.commandTextBox.TabIndex = 2;
-            // 
-            // browseForFolderButton
-            // 
-            this.mainTableLayoutPanel.SetColumnSpan(this.browseForFolderButton, 2);
-            this.browseForFolderButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.browseForFolderButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.browseForFolderButton.Location = new System.Drawing.Point(3, 3);
-            this.browseForFolderButton.Name = "browseForFolderButton";
-            this.browseForFolderButton.Size = new System.Drawing.Size(295, 34);
-            this.browseForFolderButton.TabIndex = 0;
-            this.browseForFolderButton.Text = "&Browse for folder";
-            this.browseForFolderButton.UseVisualStyleBackColor = true;
-            this.browseForFolderButton.Click += new System.EventHandler(this.OnBrowseForFolderButtonClick);
-            // 
-            // MainForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(301, 267);
-            this.Controls.Add(this.mainTableLayoutPanel);
-            this.Controls.Add(this.mainStatusStrip);
-            this.Controls.Add(this.mainMenuStrip);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RecuRUN";
-            this.mainStatusStrip.ResumeLayout(false);
-            this.mainStatusStrip.PerformLayout();
-            this.mainMenuStrip.ResumeLayout(false);
-            this.mainMenuStrip.PerformLayout();
-            this.mainTableLayoutPanel.ResumeLayout(false);
-            this.mainTableLayoutPanel.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+        	System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+        	this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
+        	this.countToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+        	this.mainToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+        	this.mainStatusStrip = new System.Windows.Forms.StatusStrip();
+        	this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+        	this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+        	this.sourceCodeGithubcomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+        	this.originalThreadDonationCodercomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+        	this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+        	this.dailyReleasesPublicDomainDailycomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+        	this.alwaysOnTopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+        	this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+        	this.showConsoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+        	this.resetCountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+        	this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+        	this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+        	this.minimizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+        	this.mainMenuStrip = new System.Windows.Forms.MenuStrip();
+        	this.mainTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+        	this.create0ByteFilesButton = new System.Windows.Forms.Button();
+        	this.commandLabel = new System.Windows.Forms.Label();
+        	this.fileNameLabel = new System.Windows.Forms.Label();
+        	this.fileNameTextBox = new System.Windows.Forms.TextBox();
+        	this.executeRecursivelyButton = new System.Windows.Forms.Button();
+        	this.commandTextBox = new System.Windows.Forms.TextBox();
+        	this.browseForFolderButton = new System.Windows.Forms.Button();
+        	this.mainStatusStrip.SuspendLayout();
+        	this.mainMenuStrip.SuspendLayout();
+        	this.mainTableLayoutPanel.SuspendLayout();
+        	this.SuspendLayout();
+        	// 
+        	// countToolStripStatusLabel
+        	// 
+        	this.countToolStripStatusLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+        	this.countToolStripStatusLabel.Name = "countToolStripStatusLabel";
+        	this.countToolStripStatusLabel.Size = new System.Drawing.Size(14, 17);
+        	this.countToolStripStatusLabel.Text = "0";
+        	// 
+        	// mainToolStripStatusLabel
+        	// 
+        	this.mainToolStripStatusLabel.Name = "mainToolStripStatusLabel";
+        	this.mainToolStripStatusLabel.Size = new System.Drawing.Size(97, 17);
+        	this.mainToolStripStatusLabel.Text = "Processed count:";
+        	// 
+        	// mainStatusStrip
+        	// 
+        	this.mainStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+        	        	        	this.mainToolStripStatusLabel,
+        	        	        	this.countToolStripStatusLabel});
+        	this.mainStatusStrip.Location = new System.Drawing.Point(0, 245);
+        	this.mainStatusStrip.Name = "mainStatusStrip";
+        	this.mainStatusStrip.Size = new System.Drawing.Size(301, 22);
+        	this.mainStatusStrip.SizingGrip = false;
+        	this.mainStatusStrip.TabIndex = 29;
+        	// 
+        	// aboutToolStripMenuItem
+        	// 
+        	this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+        	this.aboutToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
+        	this.aboutToolStripMenuItem.Text = "&About...";
+        	this.aboutToolStripMenuItem.Click += new System.EventHandler(this.OnAboutToolStripMenuItemClick);
+        	// 
+        	// toolStripSeparator2
+        	// 
+        	this.toolStripSeparator2.Name = "toolStripSeparator2";
+        	this.toolStripSeparator2.Size = new System.Drawing.Size(286, 6);
+        	// 
+        	// sourceCodeGithubcomToolStripMenuItem
+        	// 
+        	this.sourceCodeGithubcomToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sourceCodeGithubcomToolStripMenuItem.Image")));
+        	this.sourceCodeGithubcomToolStripMenuItem.Name = "sourceCodeGithubcomToolStripMenuItem";
+        	this.sourceCodeGithubcomToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
+        	this.sourceCodeGithubcomToolStripMenuItem.Text = "Source code @ Github.com";
+        	this.sourceCodeGithubcomToolStripMenuItem.Click += new System.EventHandler(this.OnSourceCodeGithubcomToolStripMenuItemClick);
+        	// 
+        	// originalThreadDonationCodercomToolStripMenuItem
+        	// 
+        	this.originalThreadDonationCodercomToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("originalThreadDonationCodercomToolStripMenuItem.Image")));
+        	this.originalThreadDonationCodercomToolStripMenuItem.Name = "originalThreadDonationCodercomToolStripMenuItem";
+        	this.originalThreadDonationCodercomToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
+        	this.originalThreadDonationCodercomToolStripMenuItem.Text = "&Original thread @ DonationCoder.com";
+        	this.originalThreadDonationCodercomToolStripMenuItem.Click += new System.EventHandler(this.OnOriginalThreadDonationCodercomToolStripMenuItemClick);
+        	// 
+        	// helpToolStripMenuItem
+        	// 
+        	this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+        	        	        	this.dailyReleasesPublicDomainDailycomToolStripMenuItem,
+        	        	        	this.originalThreadDonationCodercomToolStripMenuItem,
+        	        	        	this.sourceCodeGithubcomToolStripMenuItem,
+        	        	        	this.toolStripSeparator2,
+        	        	        	this.aboutToolStripMenuItem});
+        	this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+        	this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+        	this.helpToolStripMenuItem.Text = "&Help";
+        	// 
+        	// dailyReleasesPublicDomainDailycomToolStripMenuItem
+        	// 
+        	this.dailyReleasesPublicDomainDailycomToolStripMenuItem.Name = "dailyReleasesPublicDomainDailycomToolStripMenuItem";
+        	this.dailyReleasesPublicDomainDailycomToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
+        	this.dailyReleasesPublicDomainDailycomToolStripMenuItem.Text = "&Daily releases @ PublicDomainDaily.com";
+        	this.dailyReleasesPublicDomainDailycomToolStripMenuItem.Click += new System.EventHandler(this.OnDailyReleasesPublicDomainDailycomToolStripMenuItemClick);
+        	// 
+        	// alwaysOnTopToolStripMenuItem
+        	// 
+        	this.alwaysOnTopToolStripMenuItem.Name = "alwaysOnTopToolStripMenuItem";
+        	this.alwaysOnTopToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+        	this.alwaysOnTopToolStripMenuItem.Text = "&Always on top";
+        	// 
+        	// optionsToolStripMenuItem
+        	// 
+        	this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+        	        	        	this.alwaysOnTopToolStripMenuItem,
+        	        	        	this.showConsoleToolStripMenuItem,
+        	        	        	this.resetCountToolStripMenuItem});
+        	this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+        	this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+        	this.optionsToolStripMenuItem.Text = "&Options";
+        	this.optionsToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.OnOptionsToolStripMenuItemDropDownItemClicked);
+        	// 
+        	// showConsoleToolStripMenuItem
+        	// 
+        	this.showConsoleToolStripMenuItem.Checked = true;
+        	this.showConsoleToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+        	this.showConsoleToolStripMenuItem.Name = "showConsoleToolStripMenuItem";
+        	this.showConsoleToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+        	this.showConsoleToolStripMenuItem.Text = "&Show console";
+        	// 
+        	// resetCountToolStripMenuItem
+        	// 
+        	this.resetCountToolStripMenuItem.Checked = true;
+        	this.resetCountToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+        	this.resetCountToolStripMenuItem.Name = "resetCountToolStripMenuItem";
+        	this.resetCountToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+        	this.resetCountToolStripMenuItem.Text = "&Reset count";
+        	// 
+        	// exitToolStripMenuItem1
+        	// 
+        	this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
+        	this.exitToolStripMenuItem1.Size = new System.Drawing.Size(92, 22);
+        	this.exitToolStripMenuItem1.Text = "E&xit";
+        	this.exitToolStripMenuItem1.Click += new System.EventHandler(this.OnExitToolStripMenuItem1Click);
+        	// 
+        	// fileToolStripMenuItem1
+        	// 
+        	this.fileToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+        	        	        	this.exitToolStripMenuItem1});
+        	this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
+        	this.fileToolStripMenuItem1.Size = new System.Drawing.Size(37, 20);
+        	this.fileToolStripMenuItem1.Text = "&File";
+        	// 
+        	// minimizeToolStripMenuItem
+        	// 
+        	this.minimizeToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+        	this.minimizeToolStripMenuItem.Name = "minimizeToolStripMenuItem";
+        	this.minimizeToolStripMenuItem.Size = new System.Drawing.Size(12, 20);
+        	this.minimizeToolStripMenuItem.Visible = false;
+        	// 
+        	// mainMenuStrip
+        	// 
+        	this.mainMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+        	        	        	this.minimizeToolStripMenuItem,
+        	        	        	this.fileToolStripMenuItem1,
+        	        	        	this.optionsToolStripMenuItem,
+        	        	        	this.helpToolStripMenuItem});
+        	this.mainMenuStrip.Location = new System.Drawing.Point(0, 0);
+        	this.mainMenuStrip.Name = "mainMenuStrip";
+        	this.mainMenuStrip.Size = new System.Drawing.Size(301, 24);
+        	this.mainMenuStrip.TabIndex = 30;
+        	// 
+        	// mainTableLayoutPanel
+        	// 
+        	this.mainTableLayoutPanel.ColumnCount = 2;
+        	this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 85F));
+        	this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+        	this.mainTableLayoutPanel.Controls.Add(this.create0ByteFilesButton, 0, 4);
+        	this.mainTableLayoutPanel.Controls.Add(this.commandLabel, 0, 1);
+        	this.mainTableLayoutPanel.Controls.Add(this.fileNameLabel, 0, 3);
+        	this.mainTableLayoutPanel.Controls.Add(this.fileNameTextBox, 1, 3);
+        	this.mainTableLayoutPanel.Controls.Add(this.executeRecursivelyButton, 0, 2);
+        	this.mainTableLayoutPanel.Controls.Add(this.commandTextBox, 1, 1);
+        	this.mainTableLayoutPanel.Controls.Add(this.browseForFolderButton, 0, 0);
+        	this.mainTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+        	this.mainTableLayoutPanel.Location = new System.Drawing.Point(0, 24);
+        	this.mainTableLayoutPanel.Name = "mainTableLayoutPanel";
+        	this.mainTableLayoutPanel.RowCount = 5;
+        	this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+        	this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+        	this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+        	this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+        	this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+        	this.mainTableLayoutPanel.Size = new System.Drawing.Size(301, 221);
+        	this.mainTableLayoutPanel.TabIndex = 5;
+        	// 
+        	// create0ByteFilesButton
+        	// 
+        	this.mainTableLayoutPanel.SetColumnSpan(this.create0ByteFilesButton, 2);
+        	this.create0ByteFilesButton.Dock = System.Windows.Forms.DockStyle.Fill;
+        	this.create0ByteFilesButton.Enabled = false;
+        	this.create0ByteFilesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+        	this.create0ByteFilesButton.Location = new System.Drawing.Point(4, 185);
+        	this.create0ByteFilesButton.Margin = new System.Windows.Forms.Padding(4);
+        	this.create0ByteFilesButton.Name = "create0ByteFilesButton";
+        	this.create0ByteFilesButton.Size = new System.Drawing.Size(293, 32);
+        	this.create0ByteFilesButton.TabIndex = 6;
+        	this.create0ByteFilesButton.Text = "Create 0-byte files";
+        	this.create0ByteFilesButton.UseVisualStyleBackColor = true;
+        	this.create0ByteFilesButton.Click += new System.EventHandler(this.OnCreate0ByteFilesButtonClick);
+        	// 
+        	// commandLabel
+        	// 
+        	this.commandLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+        	this.commandLabel.Enabled = false;
+        	this.commandLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+        	this.commandLabel.Location = new System.Drawing.Point(3, 40);
+        	this.commandLabel.Name = "commandLabel";
+        	this.commandLabel.Size = new System.Drawing.Size(79, 71);
+        	this.commandLabel.TabIndex = 1;
+        	this.commandLabel.Text = "&Command(s):";
+        	this.commandLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+        	// 
+        	// fileNameLabel
+        	// 
+        	this.fileNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+        	this.fileNameLabel.Enabled = false;
+        	this.fileNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+        	this.fileNameLabel.Location = new System.Drawing.Point(3, 151);
+        	this.fileNameLabel.Name = "fileNameLabel";
+        	this.fileNameLabel.Size = new System.Drawing.Size(79, 30);
+        	this.fileNameLabel.TabIndex = 4;
+        	this.fileNameLabel.Text = "&File name:";
+        	this.fileNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+        	// 
+        	// fileNameTextBox
+        	// 
+        	this.fileNameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+        	this.fileNameTextBox.Enabled = false;
+        	this.fileNameTextBox.Location = new System.Drawing.Point(88, 154);
+        	this.fileNameTextBox.Name = "fileNameTextBox";
+        	this.fileNameTextBox.Size = new System.Drawing.Size(210, 20);
+        	this.fileNameTextBox.TabIndex = 33;
+        	// 
+        	// executeRecursivelyButton
+        	// 
+        	this.mainTableLayoutPanel.SetColumnSpan(this.executeRecursivelyButton, 2);
+        	this.executeRecursivelyButton.Dock = System.Windows.Forms.DockStyle.Fill;
+        	this.executeRecursivelyButton.Enabled = false;
+        	this.executeRecursivelyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+        	this.executeRecursivelyButton.Location = new System.Drawing.Point(3, 114);
+        	this.executeRecursivelyButton.Name = "executeRecursivelyButton";
+        	this.executeRecursivelyButton.Size = new System.Drawing.Size(295, 34);
+        	this.executeRecursivelyButton.TabIndex = 3;
+        	this.executeRecursivelyButton.Text = "&Execute recursively";
+        	this.executeRecursivelyButton.UseVisualStyleBackColor = true;
+        	this.executeRecursivelyButton.Click += new System.EventHandler(this.OnExecuteRecursivelyButtonClick);
+        	// 
+        	// commandTextBox
+        	// 
+        	this.commandTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+        	this.commandTextBox.Enabled = false;
+        	this.commandTextBox.Location = new System.Drawing.Point(88, 43);
+        	this.commandTextBox.Multiline = true;
+        	this.commandTextBox.Name = "commandTextBox";
+        	this.commandTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+        	this.commandTextBox.Size = new System.Drawing.Size(210, 65);
+        	this.commandTextBox.TabIndex = 2;
+        	this.commandTextBox.WordWrap = false;
+        	// 
+        	// browseForFolderButton
+        	// 
+        	this.mainTableLayoutPanel.SetColumnSpan(this.browseForFolderButton, 2);
+        	this.browseForFolderButton.Dock = System.Windows.Forms.DockStyle.Fill;
+        	this.browseForFolderButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+        	this.browseForFolderButton.Location = new System.Drawing.Point(3, 3);
+        	this.browseForFolderButton.Name = "browseForFolderButton";
+        	this.browseForFolderButton.Size = new System.Drawing.Size(295, 34);
+        	this.browseForFolderButton.TabIndex = 0;
+        	this.browseForFolderButton.Text = "&Browse for folder";
+        	this.browseForFolderButton.UseVisualStyleBackColor = true;
+        	this.browseForFolderButton.Click += new System.EventHandler(this.OnBrowseForFolderButtonClick);
+        	// 
+        	// MainForm
+        	// 
+        	this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+        	this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        	this.ClientSize = new System.Drawing.Size(301, 267);
+        	this.Controls.Add(this.mainTableLayoutPanel);
+        	this.Controls.Add(this.mainStatusStrip);
+        	this.Controls.Add(this.mainMenuStrip);
+        	this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+        	this.Name = "MainForm";
+        	this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+        	this.Text = "RecuRUN";
+        	this.mainStatusStrip.ResumeLayout(false);
+        	this.mainStatusStrip.PerformLayout();
+        	this.mainMenuStrip.ResumeLayout(false);
+        	this.mainMenuStrip.PerformLayout();
+        	this.mainTableLayoutPanel.ResumeLayout(false);
+        	this.mainTableLayoutPanel.PerformLayout();
+        	this.ResumeLayout(false);
+        	this.PerformLayout();
         }
         private System.Windows.Forms.ToolStripMenuItem resetCountToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showConsoleToolStripMenuItem;
